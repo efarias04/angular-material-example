@@ -1,0 +1,38 @@
+<table class="example-full-width" cellspacing="0" style="width:100%;">
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label> ID </mat-label>
+        <input matInput disabled placeholder="id" [(ngModel)]="detalle.id">
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label> Name </mat-label>
+        <input matInput disabled placeholder="name" [(ngModel)]="detalle.name">
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label> Email </mat-label>
+        <input matInput disabled placeholder="email" [(ngModel)]="detalle.email">
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label> Body </mat-label>
+        <textarea matInput disabled placeholder="Body" [(ngModel)]="detalle.body" matTextareaAutosize
+          matAutosizeMinRows=1 matAutosizeMaxRows=15></textarea>
+      </mat-form-field>
+    </td>
+  </tr>
+</table>
+<div mat-dialog-actions align="center">
+  <button mat-raised-button color="primary" mat-dialog-close (click)="closeDialog()" title="Cerrar"> Cerrar </button>
+</div>

@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+  <img align="center" mat-card-sm-image src="../assets/img/user.png" alt="Usuario"
+    class="img-fluid img-thumbnail img-circle-login login-box">
+  <mat-card-content>
+    <p>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Username" [(ngModel)]="username">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input type="password" matInput placeholder="Password" [(ngModel)]="password" (keyup.enter)="openSnackBar()">
+      </mat-form-field>
+    </p>
+    <button mat-raised-button (click)="openSnackBar()" color="primary">Login</button>
+  </mat-card-content>
+</mat-card>

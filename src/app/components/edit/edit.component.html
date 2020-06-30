@@ -1,0 +1,33 @@
+<div mat-dialog-actions align="end">
+  <div class="example-button-row">
+    <button mat-button color="primary" (click)="closeDialog()">Volver</button>
+  </div>
+</div>
+
+<mat-form-field class="example-full-width">
+  <mat-label> ID </mat-label>
+  <input matInput disabled [(ngModel)]="registro.id">
+</mat-form-field>
+
+<table class="example-full-width" cellspacing="0" style="width:100%;">
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="title" [(ngModel)]="titleForm">
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>State</mat-label>
+        <input matInput placeholder="body" [(ngModel)]="bodyForm">
+      </mat-form-field>
+    </td>
+  </tr>
+</table>
+<div mat-dialog-actions align="center">
+  <button mat-button (click)="guardarRegistro(titleForm, bodyForm)"> Aceptar </button>
+  <button mat-button mat-dialog-close (click)="cancelarEdicion()"> Cerrar </button>
+</div>

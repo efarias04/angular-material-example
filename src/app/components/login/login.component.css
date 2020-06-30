@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+mat-card-title-group,
+mat-card-title,
+matcard-content {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+}
+
+.login-box{
+  margin: auto;
+  margin-left: 35%;
+}
+
+.blue-snackbar {
+  background: #0feb0f;
+}
+
