@@ -21,8 +21,9 @@
   <tr>
     <td>
       <mat-form-field class="example-full-width">
-        <mat-label>State</mat-label>
-        <input matInput placeholder="body" [(ngModel)]="bodyForm">
+        <mat-label> Body </mat-label>
+        <textarea matInput placeholder="Body" [(ngModel)]="bodyForm" matTextareaAutosize
+          matAutosizeMinRows=1 matAutosizeMaxRows=15></textarea>
       </mat-form-field>
     </td>
   </tr>
