@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.usuarioLogeado = sessionStorage.getItem(ConstAplicacion.VAR_USER_SESSION_STORAGE);
   }
 
 }

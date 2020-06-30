@@ -70,6 +70,9 @@ export class CommentsComponent {
     });
   }
 
+  /*
+    Este método aber un popup mostrando el detalle del registro.
+  */
   verDetalle(comentario: CommentsClass) {
     this.isPopupOpened = true;
     const dialogRef = this.dialog.open(ViweDetailComponent, {
